@@ -2,6 +2,7 @@ import {Route, Routes} from 'react-router-dom';
 import './App.css';
 import NavBar from './components/NavBar';
 import Home from './pages/Home';
+import Projects from './pages/Projects';
 import ResourcesOpportunities from './pages/ResourcesOpportunities';
 import Footer from './components/Footer';
 
@@ -11,6 +12,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route exact path='/' element={<Home />} />
+        <Route path='/projects' element={<Projects />} />
         <Route path='/resourcesopportunities' element={<ResourcesOpportunities />} />
       </Routes>
       <Footer />
