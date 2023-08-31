@@ -1,5 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import "../styles/Footer.css";
+import NSF from "../assets/NSF.png";
+import DOT from "../assets/DOT.png";
+import NIH from "../assets/NIH.png";
+import FHA from "../assets/FHA.png";
+import TOMNET from "../assets/TOMNET.png";
+import mailIcon from "../assets/mailIcon.png";
 
 const Footer = () => {
   return (
@@ -22,7 +28,7 @@ const Footer = () => {
               <div className="footer-contact-info">
                 <img
                   className="emailIcon"
-                  src="/img/mailIcon.png"
+                  src={mailIcon}
                   alt="Email Icon"
                 />
                 <p className='text-sm'>qzchen@uw.edu</p>
@@ -34,35 +40,35 @@ const Footer = () => {
                 <div className= "footer-sponsors md:pr-2">
                   <img
                     className="national-science"
-                    src="/img/NSF.png"
+                    src={NSF}
                     alt="National Science Foundation" />
                 </div>
 
                 <div className= "footer-sponsors md:p-2">
                   <img
                     className="dot"
-                    src="/img/DOT.png"
+                    src={DOT}
                     alt="Department of Transportation"/>
                 </div>
 
                 <div className= "footer-sponsors md:p-2">
                   <img
                     className="nih"
-                    src="/img/NIH.png"
+                    src={NIH}
                     alt="National Institutes of Health"/>
                 </div>
 
                 <div className= "footer-sponsors-bottom md:p-2">
                   <img
                     className="fha"
-                    src="/img/FHA.png"
+                    src={FHA}
                     alt="Federal Highway Administration"/>
                 </div>
 
                 <div className= "footer-sponsors-bottom p-1 md:p-2">
                   <img
                     className="tomet"
-                    src="/img/TOMNET.png"
+                    src={TOMNET}
                     alt="TOMNET Center for Teaching Old Models New Tricks"/>
                 </div>
               </div>

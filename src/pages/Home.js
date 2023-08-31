@@ -1,6 +1,7 @@
 import "../styles/Home.css"
 import locationIconWhite from "../assets/locationIconWhite.png"
 import locationIconBlue from "../assets/locationIconBlue.png"
+import whatWeDo from "../assets/whatWeDo.png"
 import sampleQuestions from "../assets/sampleQuestions.png"
 import researchActivities from "../assets/researchActivities.png"
 import thinkWord from "../assets/THINKword.png"
@@ -12,6 +13,9 @@ import researchPurposes from "../assets/researchPurposes.png"
 import researchSuggestions from "../assets/researchSuggestions.png"
 import learningAlong from "../assets/learningAlong.png"
 import learningAlongConcepts from "../assets/learningAlongConcepts.png"
+import scienceSymbol from "../assets/scienceSymbol.png"
+import community from "../assets/community.png"
+import researchPurposesIcon from "../assets/researchPurposesIcon.png"
 
 export const Home = () => {
   const overlayStyle = {
@@ -48,7 +52,7 @@ export const Home = () => {
 
         {/* What We Do */}
         <div className="what-we-do">
-          <img className="w-60 h-48" src="/img/whatWeDo.png" alt="What We Do"/>
+          <img className="w-60 h-48" src={whatWeDo} alt="What We Do"/>
           <p>The work at the <span>THINK</span> (Transportation-Human Interaction-and-Network Knowledge) Lab is at
             the intersection of human behavior (in particular mobility patterns), the built environment
             and the larger infrastructure systems, and data science. Our work answers to some of the
@@ -56,7 +60,7 @@ export const Home = () => {
             scales. More specifically, THINK lab's research activities center on unpacking complexities
             across scales, from micro-level individual mobility behaviors, to meso-scale interactions
             formed as the result of individual behaviors (whether the subject of interest is human or
-            physical assets), to macro-level system behaviors that propagate through a single network 
+            physical assets), to macro-level system behaviors that propagate through a single network
             or multiple networks.
           </p>
         </div>
@@ -223,7 +227,7 @@ export const Home = () => {
             </div>
             <img
               className="w-64 h-72"
-              src="/img/scienceSymbol.png"
+              src={scienceSymbol}
               alt="blue atom symbol with 3 globes on the intersection"
             />
           </div>
@@ -243,7 +247,7 @@ export const Home = () => {
             <div className="two-examples-para mr-5">
               <h4 className="mt-4">Katie Idziorek</h4>
               <img
-                src="/img/community.png"
+                src= {community}
                 alt="6 human figures holding hands"
               />
               <p>
@@ -312,7 +316,7 @@ export const Home = () => {
               work fun.
             </p>
             <img
-              src="/img/researchPurposesIcon.png"
+              src={researchPurposesIcon}
               alt="Computer screen with increasing arrow on the tip, a bar graph to the left and
               magnifying glass to the right"
             />

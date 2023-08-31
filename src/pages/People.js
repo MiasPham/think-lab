@@ -4,6 +4,18 @@ import locationIconBlue from "../assets/locationIconBlue.png";
 import previousMembers from "../assets/previousMembers.png"
 import { useTable } from "react-table";
 import membersData from "../PREVIOUS_MEMBERS.json";
+import computerIcon from "../assets/computerIcon.png";
+import uploadIcon from "../assets/uploadIcon.png";
+import settingIcon from "../assets/settingIcon.png";
+import fixingIcon from "../assets/fixingIcon.png"
+import cynthiaChen from "../assets/THINKLabHeadshots/Cynthia_Chen.png";
+import xiangyangGuan from "../assets/THINKLabHeadshots/Xiangyang_Guan.png";
+import graceJia from "../assets/THINKLabHeadshots/Grace_Jia.png";
+import ekinUgurel from "../assets/THINKLabHeadshots/Ekin_Ugurel.png";
+import kaitlynNg from "../assets/THINKLabHeadshots/Kaitlyn_Ng.png";
+import kittibhumTasanasuwan from "../assets/THINKLabHeadshots/Kittibhum_Tasanasuwan.png";
+import arsalanEsmaeili from "../assets/THINKLabHeadshots/Arsalan_Esmaeili.png";
+import zhengyangLi from "../assets/THINKLabHeadshots/Zhengyang_Li.png";
 
 export const People = () => {
   const data = React.useMemo(() => membersData, []);
@@ -52,19 +64,31 @@ export const People = () => {
 
       <div className="travel-survey-graphics">
         <div className="graphics pr-28">
-          <img className="w-36 h-32 mb-5" src="/img/computerIcon.png" alt="Computer screens"></img>
+          <img
+            className="w-36 h-32 mb-5"
+            src={computerIcon}
+            alt="Computer screens">
+          </img>
           <p className="">High and Low Tech</p>
           <p>We integrate high and low tech, recognizing that all means (methods) are needed</p>
         </div>
 
         <div className="graphics pr-28">
-          <img className="w-40 h-32 mb-5" src="/img/uploadIcon.png" alt="Cloud with an upload arrow"></img>
+          <img
+            className="w-40 h-32 mb-5"
+            src={uploadIcon}
+            alt="Cloud with an upload arrow">
+          </img>
           <p className="">Transdisciplinary</p>
           <p>We integrate and transform knowledge from disciplinaries from engineering to science</p>
         </div>
 
         <div className="graphics pr-28">
-          <img className="w-32 h-32 mb-6" src="/img/settingIcon.png" alt="Two gears"></img>
+          <img
+            className="w-32 h-32 mb-6"
+            src={settingIcon}
+            alt="Two gears">
+          </img>
           <p className="">Problem-Driven</p>
           <p>
             Our work is motivated from real-world problems whose solutions will have significant
@@ -73,7 +97,11 @@ export const People = () => {
         </div>
 
         <div className="graphics pr-32">
-          <img className="w-36 h-32 mb-7" src="/img/fixingIcon.png" alt="Fixing tools"></img>
+          <img
+            className="w-36 h-32 mb-7"
+            src={fixingIcon}
+            alt="Fixing tools">
+          </img>
           <p className="">Rooted in Science</p>
           <p>
             Our approach to problems is rooted in science. We generate basic knowledge and tools for
@@ -95,7 +123,7 @@ export const People = () => {
         <div className="current-members-individual">
           <img
             className="profile"
-            src="/img/THINKLabHeadshots/Cynthia_Chen.png"
+            src={cynthiaChen}
             alt="Professor Cytnthia Chen" />
           <p>Cynthia Chen, Ph.D.</p>
           <p>Director</p>
@@ -116,7 +144,7 @@ export const People = () => {
         <div className="current-members-individual">
           <img
             className="profile"
-            src="/img/THINKLabHeadshots/Xiangyang_Guan.png"
+            src={xiangyangGuan}
             alt="Xiangyang Guan" />
           <p>Xiangyang Guan</p>
           <p>Honorary THINK Lab Member</p>
@@ -135,7 +163,7 @@ export const People = () => {
         <div className="current-members-individual">
           <img
             className="profile"
-            src="/img/THINKLabHeadshots/Grace_Jia.png"
+            src={graceJia}
             alt="Grace Jia" />
           <p>Grace Jia</p>
           <p>PhD Student and Researcher</p>
@@ -151,7 +179,7 @@ export const People = () => {
         <div className="current-members-individual">
           <img
             className="profile"
-            src="/img/THINKLabHeadshots/Ekin_Ugurel.png"
+            src={ekinUgurel}
             alt="Ekin Ugurel" />
           <p>Ekin Ugurel</p>
           <p>PhD Student and Researcher</p>
@@ -167,7 +195,7 @@ export const People = () => {
         <div className="current-members-individual">
           <img
             className="profile"
-            src="/img/THINKLabHeadshots/Kaitlyn_Ng.png"
+            src={kaitlynNg}
             alt="Kaitlyn Ng" />
           <p>Kaitlyn Ng</p>
           <p>MS Student and Researcher</p>
@@ -183,7 +211,7 @@ export const People = () => {
         <div className="current-members-individual">
           <img
             className="profile"
-            src="/img/THINKLabHeadshots/Kittibhum_Tasanasuwan.png"
+            src={kittibhumTasanasuwan}
             alt="Kittibhum Tasanasuwan" />
           <p>Kittibhum Tasanasuwan</p>
           <p>MS Student and Researcher</p>
@@ -198,7 +226,7 @@ export const People = () => {
         <div className="current-members-individual">
           <img
             className="profile"
-            src="/img/THINKLabHeadshots/Arsalan_Esmaeili.png"
+            src={arsalanEsmaeili}
             alt="Arsalan Esmaeili" />
           <p>Arsalan Esmaeili</p>
           <p>PhD Student and Researcher</p>
@@ -215,7 +243,7 @@ export const People = () => {
         <div className="current-members-individual">
           <img
             className="profile"
-            src="/img/THINKLabHeadshots/Zhengyang_Li.png"
+            src={zhengyangLi}
             alt="Zhengyang Li" />
           <p>Zhengyang Li</p>
           <p>Visiting PhD Student</p>

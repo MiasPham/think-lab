@@ -1,4 +1,8 @@
 import "../styles/ResourcesOpportunities.css";
+import sociodemographicIcon from "../assets/sociodemographicIcon.png";
+import location from "../assets/locationIcon.png";
+import questionMark from "../assets/questionMark.png";
+import otherIcon from "../assets/otherIcon.png";
 
 export const ResourcesOpportunities = () => {
   return (
@@ -32,25 +36,25 @@ export const ResourcesOpportunities = () => {
 
       <div className="travel-survey-graphics">
         <div className="graphics pr-28">
-          <img className="w-36 h-32 mb-5" src="/img/sociodemographicIcon.png" alt="Sociodemographic"></img>
+          <img className="w-36 h-32 mb-5" src={sociodemographicIcon} alt="Sociodemographic"></img>
           <p className="">Socio-demographics</p>
           <p>Here you will find past works on socio-demographics related questions.</p>
         </div>
 
         <div className="graphics pr-28">
-          <img className="w-24 h-32 mb-5" src="/img/locationIcon.png" alt="Location"></img>
+          <img className="w-24 h-32 mb-5" src={location} alt="Location"></img>
           <p className="">Travel-Related: Work</p>
           <p>Here you will find past works on commute trip related questions.</p>
         </div>
 
         <div className="graphics pr-28">
-          <img className="w-16 h-28 mb-8" src="/img/questionMark.png" alt="Sociodemographic"></img>
+          <img className="w-16 h-28 mb-8" src={questionMark} alt="Sociodemographic"></img>
           <p className="">Travel-Related: Non-Work</p>
           <p>Here you will find past works on questions relating to nonwork related trips.</p>
         </div>
 
         <div className="graphics pr-32">
-          <img className="w-28 h-32 mb-4 " src="/img/otherIcon.png" alt="Sociodemographic"></img>
+          <img className="w-28 h-32 mb-4 " src={otherIcon} alt="Sociodemographic"></img>
           <p className="">Other</p>
           <p>Additional survey resources</p>
         </div>

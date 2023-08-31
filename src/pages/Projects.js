@@ -4,6 +4,10 @@ import locationIconBlue from "../assets/locationIconBlue.png";
 import researchGrants from "../assets/researchGrants.png";
 import grantData from "../RESEARCH_GRANTS.json"
 import { useTable } from "react-table";
+import facebook from "../assets/fbLogo.png";
+import FHWA from "../assets/FHWA.png";
+import NSF from "../assets/NSF.png";
+import NIH from "../assets/NIH.png";
 
 export const Projects = () => {
   const data = React.useMemo(() => grantData, []);
@@ -51,14 +55,14 @@ export const Projects = () => {
       <div className="projects-sponsors">
         <div className="sponsors-logo-container">
           <div className="sponosors-logo">
-            <img className="w-20 h-20 mb-4" src="/img/fbLogo.png" alt="Facebook" />
+            <img className="w-20 h-20 mb-4" src={facebook} alt="Facebook" />
             <p>Facebook</p>
           </div>
         </div>
 
         <div className="sponsors-logo-container">
           <div className="sponosors-logo">
-            <img className="w-80 h-15 mt-10 mb-10" src="/img/FHWA.png" alt="Federal Highway Administration" />
+            <img className="w-80 h-15 mt-10 mb-10" src={FHWA} alt="Federal Highway Administration" />
             <p>U.S. Department of Transportation</p>
             <p>Federal Highway Administration</p>
           </div>
@@ -66,14 +70,14 @@ export const Projects = () => {
 
         <div className="sponsors-logo-container">
           <div className="sponosors-logo">
-            <img className="w-24 h-24 mb-2.5" src="/img/NSF.png" alt="National Science Foundation" />
+            <img className="w-24 h-24 mb-2.5" src={NSF} alt="National Science Foundation" />
             <p>National Science Foundation</p>
           </div>
         </div>
 
         <div className="sponsors-logo-container">
           <div className="sponosors-logo">
-            <img className="w-28 h-16 mt-5 mb-6" src="/img/NIH.png" alt="National Institutes of Health" />
+            <img className="w-28 h-16 mt-5 mb-6" src={NIH} alt="National Institutes of Health" />
             <p>National Institutes of Health</p>
           </div>
         </div>
